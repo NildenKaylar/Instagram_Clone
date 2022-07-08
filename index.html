@@ -9,16 +9,19 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css"
         integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Instagram</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <nav class="navbar sticky-top navbar-expand-sm navbar-light bg-white" style="height: 54px;">
-        <div>
+    <nav class="navbar sticky-top navbar-expand-sm navbar-light bg-white border-bottom" style="height: 54px;">
+        <div class="collapse navbar-collapse">
             <a class="navbar-brand" style="margin-left: 192px;" href="#">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Instagram_logo.svg/1280px-Instagram_logo.svg.png"
                     width="100" height=auto alt="">
@@ -26,38 +29,38 @@
         </div>
 
         <div class="collapse navbar-collapse ml-5">
-            <form class="form-inline my-2 my-lg-0 ">
-                <input class="form-control mr-sm-2 text-center" type="search" placeholder="Ara"
-                    style="font-family: Arial, FontAwesome; height: 28px; width: 216px" aria-label="Search">
+            <form class="form-inline my-2 my-lg-0"> 
+                <span style="position:relative; left:25px;"><i class="fa fa-thin fa-magnifying-glass" style="color: grey; font-size: 14px;"></i></span>
+                <input class="form-control mr-sm-2 search-input" type="search"  placeholder= "     Ara"
+                    style="font-family: Arial, FontAwesome; width: 270px;" aria-label="Search"> 
             </form>
         </div>
 
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item ">
+            <ul class="navbar-nav mr-auto align-items-center d-flex">
+                <li class="nav-item mr-2">
                     <a class="nav-link" href="#">
-                        <i class=" fa-solid fa-house" style="color: black"></i>
+                        <i class="fa fa-solid fa-house" style="color: black; font-size: 23px;"></i>
+                    </a>
+                </li>
+                <li class="nav-item mr-2">
+                    <a class="nav-link" href="#">
+                        <i class="fa fa-brands fa-facebook-messenger" style="color: black; font-size: 23px;"></i>
+                    </a>
+                </li>
+                <li class="nav-item mr-2">
+                    <a class="nav-link" href="#">
+                        <i class="far fa-thin fa-square-plus" style="color: black; font-size: 23px;"></i>
+                    </a>
+                </li>
+                <li class="nav-item mr-2">
+                    <a class="nav-link" href="#">
+                        <i class="far fa-thin fa-heart" style="color: black; font-size: 23px;"></i>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">
-                        <i class="fab fa-facebook-messenger fa-lg mr-2 mt-1" style="color: black"></i>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">
-                        <!-- <i class="far fa-compass fa-lg mr-2 mt-1" style="color: black"></i> -->
-                        <i class="far fa-thin fa-square-plus mr-2 mt-1" style="color: black"></i>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">
-                        <i class="far fa-light fa-heart" style="color: black; font-size: 23px;"></i>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="">
+                    <a class="nav-link" href="">
                         <img src="https://picsum.photos/id/12/23" class="rounded-circle" alt="">
                     </a>
                 </li>
@@ -68,44 +71,48 @@
     <div class="container middlearea">
         <div class="row justify-content-md-center">
             <!-- Leftside -->
-            <div class="col-md-6 mt-5">
+            <div class="col-md-6 mt-4 ">
                 <!-- Stories -->
-                <div class="card">
-                    <div class="card-body d-flex text-center">
+                <div class="card ">
+                    <div class="card-body d-flex justify-content-between align-items-center text-center">
                         <a href="#" style="text-decoration: none;" target="_blank">
                             <img src="https://picsum.photos/id/111/40" class="rounded-circle border border-danger"
-                                alt="">loremipsum
+                                alt=""><span class="small text-body ">loremipsum</span> 
                         </a>
                         <a href="#" style="text-decoration: none;" target="_blank">
                             <img src="https://picsum.photos/id/112/40" class="rounded-circle border border-danger"
-                                alt="">loremipsum
+                                alt=""><span class="small text-body ">loremipsum</span>
                         </a>
                         <a href="#" style="text-decoration: none;" target="_blank">
                             <img src="https://picsum.photos/id/113/40" class="rounded-circle border border-danger"
-                                alt="">loremipsum
+                                alt=""><span class="small text-body ">loremipsum</span>
                         </a>
                         <a href="#" style="text-decoration: none;" target="_blank">
                             <img src="https://picsum.photos/id/114/40" class="rounded-circle border border-danger"
-                                alt="">loremipsum
+                                alt=""><span class="small text-body ">loremipsum</span>
                         </a>
                         <a href="#" style="text-decoration: none;" target="_blank">
                             <img src="https://picsum.photos/id/115/40" class="rounded-circle border border-danger"
-                                alt="">loremipsum
+                                alt=""><span class="small text-body ">loremipsum</span>
                         </a>
                         <a href="#" style="text-decoration: none;" target="_blank">
                             <img src="https://picsum.photos/id/116/40" class="rounded-circle border border-danger"
-                                alt="">loremipsum
+                                alt=""><span class="small text-body ">loremipsum</span>
                         </a>
                         <a href="#" style="text-decoration: none;" target="_blank">
                             <img src="https://picsum.photos/id/117/40" class="rounded-circle border border-danger"
-                                alt="">loremipsum
+                                alt=""><span class="small text-body ">loremipsum</span>
                         </a>
                     </div>
                 </div>
-                <!-- Gönderiler -->
-                <div class="card-group">
 
-                    <div class="card mt-5 bg-white">
+
+
+
+                <!-- Gönderiler -->
+                <div class="">
+                    <!-- Gönderi -->
+                    <div class="card mt-3 bg-white">
                         <!-- Gönderi Header -->
                         <div class="card-header d-flex justify-content-between align-items-center bg-white">
                             <div class="d-flex">
@@ -117,10 +124,10 @@
                                 <img src="images/icons8-dot-32.png" alt="">
                             </div>
                         </div>
-                        <img src="https://picsum.photos/id/237/300/200" class="card-img-top" alt="...">
+                        <img src="https://picsum.photos/id/237/200/300" class="card-img-top" alt="...">
                         <!-- Gönderi Body -->
                         <div class="card-body">
-                            <div class="d-flex justify-content-between mt-2">
+                            <div class="d-flex justify-content-between">
                                 <div class="">
                                     <a class="mr-2" href="">
                                         <i class="far fa-light fa-heart" style="color: black; font-size: 23px;"></i>
@@ -161,52 +168,232 @@
                                     class="badge text-primary">Paylaş</span></p>
                         </footer>
                     </div>
+
+                    <!-- Gönderi -->
+                    <div class="card mt-3 bg-white">
+                        <!-- Gönderi Header -->
+                        <div class="card-header d-flex justify-content-between align-items-center bg-white">
+                            <div class="d-flex">
+                                <img src="https://picsum.photos/id/12/40" class="rounded-circle" alt="">
+                                <p class="ml-3 my-auto font-weight-bold">loremipsum</p>
+                            </div>
+
+                            <div class="">
+                                <img src="images/icons8-dot-32.png" alt="">
+                            </div>
+                        </div>
+                        <img src="https://picsum.photos/id/240/200/300" class="card-img-top" alt="...">
+                        <!-- Gönderi Body -->
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between">
+                                <div class="">
+                                    <a class="mr-2" href="">
+                                        <i class="far fa-light fa-heart" style="color: black; font-size: 23px;"></i>
+                                    </a>
+                                    <a class="mr-2" href="">
+                                        <i><i class="far fa-light fa-comment"
+                                                style="color: black; font-size: 23px"></i></i>
+                                    </a>
+                                    <a href="">
+                                        <i class="far fa-light fa-paper-plane"
+                                            style="color: black; font-size: 23px"></i>
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="">
+                                        <i class="far fa-light fa-bookmark" style="color: black; font-size: 23px"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="d-flex mt-1">
+                                <img src="https://picsum.photos/id/12/23" class="rounded-circle" alt="">
+                                <p class="ml-1 my-auto small"><span class="font-weight-bold">loremipsum </span>ve <span
+                                        class="font-weight-bold">675 diğer kişi</span> beğendi</p>
+                            </div>
+                            <div class="small mt-1">
+                                <p>
+                                    <span class="font-weight-bold">loremipsum </span>Lorem ipsum dolor sit. <br>
+                                    <span class="text-muted">15 yorumun tümünü gör.</span> <br>
+                                    <span class="font-weight-bold">dolorsit </span>Lorem ipsum dolor sit. <br>
+                                    <span class="font-weight-bold">ipsumdolorsit </span>Lorem ipsum dolor sit. <br>
+                                    <span class="text-muted small">15 SAAT ÖNCE</span> <br>
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Gönderi Footer -->
+                        <footer class="card-footer bg-white">
+                            <p class="d-flex justify-content-between align-items-center">Yorum Ekle... <span
+                                    class="badge text-primary">Paylaş</span></p>
+                        </footer>
+                    </div>
+
+                    <!-- Gönderi -->
+                    <div class="card mt-3 bg-white">
+                        <!-- Gönderi Header -->
+                        <div class="card-header d-flex justify-content-between align-items-center bg-white">
+                            <div class="d-flex">
+                                <img src="https://picsum.photos/id/12/40" class="rounded-circle" alt="">
+                                <p class="ml-3 my-auto font-weight-bold">loremipsum</p>
+                            </div>
+
+                            <div class="">
+                                <img src="images/icons8-dot-32.png" alt="">
+                            </div>
+                        </div>
+                        <img src="https://picsum.photos/id/250/200/300" class="card-img-top" alt="...">
+                        <!-- Gönderi Body -->
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between">
+                                <div class="">
+                                    <a class="mr-2" href="">
+                                        <i class="far fa-light fa-heart" style="color: black; font-size: 23px;"></i>
+                                    </a>
+                                    <a class="mr-2" href="">
+                                        <i><i class="far fa-light fa-comment"
+                                                style="color: black; font-size: 23px"></i></i>
+                                    </a>
+                                    <a href="">
+                                        <i class="far fa-light fa-paper-plane"
+                                            style="color: black; font-size: 23px"></i>
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="">
+                                        <i class="far fa-light fa-bookmark" style="color: black; font-size: 23px"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="d-flex mt-1">
+                                <img src="https://picsum.photos/id/12/23" class="rounded-circle" alt="">
+                                <p class="ml-1 my-auto small"><span class="font-weight-bold">loremipsum </span>ve <span
+                                        class="font-weight-bold">675 diğer kişi</span> beğendi</p>
+                            </div>
+                            <div class="small mt-1">
+                                <p>
+                                    <span class="font-weight-bold">loremipsum </span>Lorem ipsum dolor sit. <br>
+                                    <span class="text-muted">15 yorumun tümünü gör.</span> <br>
+                                    <span class="font-weight-bold">dolorsit </span>Lorem ipsum dolor sit. <br>
+                                    <span class="font-weight-bold">ipsumdolorsit </span>Lorem ipsum dolor sit. <br>
+                                    <span class="text-muted small">15 SAAT ÖNCE</span> <br>
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Gönderi Footer -->
+                        <footer class="card-footer bg-white">
+                            <p class="d-flex justify-content-between align-items-center">Yorum Ekle... <span
+                                    class="badge text-primary">Paylaş</span></p>
+                        </footer>
+                    </div>
+
+                    <!-- Gönderi -->
+                    <div class="card mt-3 bg-white">
+                        <!-- Gönderi Header -->
+                        <div class="card-header d-flex justify-content-between align-items-center bg-white">
+                            <div class="d-flex">
+                                <img src="https://picsum.photos/id/12/40" class="rounded-circle" alt="">
+                                <p class="ml-3 my-auto font-weight-bold">loremipsum</p>
+                            </div>
+
+                            <div class="">
+                                <img src="images/icons8-dot-32.png" alt="">
+                            </div>
+                        </div>
+                        <img src="https://picsum.photos/id/260/200/300" class="card-img-top" alt="...">
+                        <!-- Gönderi Body -->
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between">
+                                <div class="">
+                                    <a class="mr-2" href="">
+                                        <i class="far fa-light fa-heart" style="color: black; font-size: 23px;"></i>
+                                    </a>
+                                    <a class="mr-2" href="">
+                                        <i><i class="far fa-light fa-comment"
+                                                style="color: black; font-size: 23px"></i></i>
+                                    </a>
+                                    <a href="">
+                                        <i class="far fa-light fa-paper-plane"
+                                            style="color: black; font-size: 23px"></i>
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="">
+                                        <i class="far fa-light fa-bookmark" style="color: black; font-size: 23px"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="d-flex mt-1">
+                                <img src="https://picsum.photos/id/12/23" class="rounded-circle" alt="">
+                                <p class="ml-1 my-auto small"><span class="font-weight-bold">loremipsum </span>ve <span
+                                        class="font-weight-bold">675 diğer kişi</span> beğendi</p>
+                            </div>
+                            <div class="small mt-1">
+                                <p>
+                                    <span class="font-weight-bold">loremipsum </span>Lorem ipsum dolor sit. <br>
+                                    <span class="text-muted">15 yorumun tümünü gör.</span> <br>
+                                    <span class="font-weight-bold">dolorsit </span>Lorem ipsum dolor sit. <br>
+                                    <span class="font-weight-bold">ipsumdolorsit </span>Lorem ipsum dolor sit. <br>
+                                    <span class="text-muted small">15 SAAT ÖNCE</span> <br>
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Gönderi Footer -->
+                        <footer class="card-footer bg-white">
+                            <p class="d-flex justify-content-between align-items-center">Yorum Ekle... <span
+                                    class="badge text-primary">Paylaş</span></p>
+                        </footer>
+                    </div>
+
+
                 </div>
 
             </div>
 
 
             <!-- Sidebar -->
-            <div class="col-md-3 mt-5 ml-5">
+            <div class="col-md-4 mt-3 ml-3">
                 <div class="card col-xs-12 rightpanel position-fixed bg-transparent border-0" id="sticky-sidebar"
-                    style="width: 18rem">
+                    style="width: 22rem">
                     <div class="card-header d-flex border-0 bg-transparent">
-                        <img src="https://picsum.photos/id/12/40" class="rounded-circle border border-danger" alt="">
-                        <p class="ml-3 my-auto font-weight-bold">loremipsum</p>
+                        <img src="https://picsum.photos/id/12/50" class="rounded-circle border border-danger" alt="">
+                        <p class="ml-3 my-auto font-weight-bold">nildenkaylar</p>
                     </div>
                     <div class="card-body">
-                        <p class="text-muted d-flex justify-content-between align-items-center">Senin İçin
-                            Öneriler<span class="badge text-dark">Tümünü Gör</span></p>
+                        <p class="d-flex justify-content-between align-items-center font-weight-bold"><span style="font-size: 14px; color: rgb(172, 171, 171);">Senin İçin
+                            Öneriler</span><span class="badge text-dark">Tümünü Gör</span></p>
                         <p class="font-weight-bold  d-flex justify-content-between align-items-center">
-                            dapibusfacilisis<span class="badge text-primary ">Takip Et</span></p>
+                            <span style="font-size: 14px;">kodluyoruz</span><span class="badge text-primary ">Takip Et</span></p>
                         <p class="font-weight-bold  d-flex justify-content-between align-items-center">
-                            dapibusfacilisis<span class="badge text-primary ">Takip Et</span></p>
+                            <span style="font-size: 14px;">patika</span><span class="badge text-primary ">Takip Et</span></p>
                         <p class="font-weight-bold  d-flex justify-content-between align-items-center">
-                            dapibusfacilisis<span class="badge text-primary ">Takip Et</span></p>
+                            <span style="font-size: 14px;">nildenkaylar</span><span class="badge text-primary ">Takip Et</span></p>
                         <p class="font-weight-bold  d-flex justify-content-between align-items-center">
-                            dapibusfacilisis<span class="badge text-primary ">Takip Et</span></p>
+                            <span style="font-size: 14px;">hakanyalcin</span><span class="badge text-primary ">Takip Et</span></p>
                     </div>
                     <div class="card-footer border-0 bg-transparent">
                         <span class="text-muted"
-                            style="color: lightgray; font-size: 11px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
+                            style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
                             <a href="https://about.instagram.com/" target="_blank" class="rightpanellinks">Hakkında</a>
+                            <span style="color: grey;">·</span>
                             <a href="https://help.instagram.com/" target="_blank" class="rightpanellinks">Yardım</a>
+                            <span style="color: grey;">·</span>
                             <a href="https://about.instagram.com/blog/" class="rightpanellinks">Basın</a>
+                            <span style="color: grey;">·</span>
                             <a href="https://www.instagram.com/developer/" class="rightpanellinks">API</a>
+                            <span style="color: grey;">·</span>
                             <a href="https://www.instagram.com/about/jobs/" class="rightpanellinks">İş
                                 Fırsatları</a>
+                                <span style="color: grey;">·</span>
                             <a href="https://www.instagram.com/legal/privacy/" class="rightpanellinks">Gizlilik</a>
                         </span>
                         <span class="">
                             <a href="https://www.instagram.com/legal/terms/" class="rightpanellinks">Koşullar</a>
+                            <span style="color: grey;">·</span>
                             <a href="https://www.instagram.com/explore/locations/" class="rightpanellinks">Konumlar</a>
-                            <a href="https://www.instagram.com/directory/profiles/" class="rightpanellinks">Başlıca
-                                Hesaplar</a>
-                            <a href="https://www.instagram.com/directory/hashtags/" class="rightpanellinks">Konu
-                                Etiketleri</a>
+                            <span style="color: grey;">·</span>
+                            <a href="https://www.instagram.com/directory/profiles/" class="rightpanellinks">Dil</a>
                         </span>
                         <p></p>
-                        <p style="font-size: 12px;">© 2021 INSTAGRAM FROM NİLDENKAYLAR</p>
+                        <p style="font-size: 12px; color: grey;">© 2021 INSTAGRAM FROM NİLDENKAYLAR</p>
                     </div>
                 </div>
             </div>
